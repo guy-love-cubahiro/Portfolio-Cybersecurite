@@ -2,7 +2,9 @@
 
 Bienvenue sur mon portfolio de cybersécurité.
 
-Ce dépôt présente les laboratoires, projets et exercices que je réalise afin de développer mes compétences en cybersécurité.
+Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité de Polytechnique Montréal. Ce dépôt présente les laboratoires, projets et exercices que je réalise afin de développer mes compétences techniques et de me préparer à un poste d'analyste SOC junior.
+
+---
 
 ## Objectifs
 
@@ -10,6 +12,9 @@ Ce dépôt présente les laboratoires, projets et exercices que je réalise afin
 - Construire un portfolio professionnel.
 - Maîtriser les outils utilisés par les analystes SOC.
 - Documenter chaque laboratoire de manière claire et reproductible.
+- Démontrer ma progression à travers des projets concrets.
+
+---
 
 ## Technologies utilisées
 
@@ -22,13 +27,51 @@ Ce dépôt présente les laboratoires, projets et exercices que je réalise afin
 - GitHub
 - GitHub Desktop
 
+---
+
 ## Projets
 
-### 01 - Wireshark
-- Capture et analyse de trafic réseau
-- Analyse des protocoles ICMP, ARP, DNS, TCP et HTTP
-- Documentation des captures réseau
+| Projet | Statut |
+|---------|:------:|
+| 01 – Analyse du trafic réseau avec Wireshark | ✅ Terminé |
+| 02 – Scanner de réseau avec Nmap | ⏳ À venir |
+| 03 – Active Directory | ⏳ À venir |
+| 04 – Analyse de vulnérabilités avec OpenVAS | ⏳ À venir |
+| 05 – Protection et investigation avec Microsoft Defender | ⏳ À venir |
+| 06 – Analyse des journaux avec Splunk | ⏳ À venir |
+| 07 – Détection avec Wazuh | ⏳ À venir |
+| 08 – Projet d'intégration SOC | ⏳ À venir |
+| 09 – Détection d'incidents avec Microsoft Sysmon et Event Viewer | ⏳ À venir |
+| 10 – Préparation aux entretiens techniques | ⏳ À venir |
 
 ---
 
-Ce portfolio est mis à jour régulièrement au fur et à mesure de mon apprentissage.
+## Compétences développées
+
+- Analyse réseau
+- Analyse de protocoles
+- Administration Windows
+- Linux
+- Virtualisation
+- Documentation technique
+- Git et GitHub
+- Méthodologie d'investigation
+
+---
+
+## À propos de ce portfolio
+
+Chaque projet comprend :
+
+- un laboratoire réalisé dans un environnement personnel ;
+- une documentation détaillée ;
+- des captures d'écran ;
+- les commandes utilisées ;
+- une analyse technique ;
+- les compétences acquises.
+
+L'objectif est de démontrer ma capacité à apprendre, documenter et appliquer les concepts de cybersécurité dans un contexte pratique.
+
+---
+
+Merci de votre visite !
