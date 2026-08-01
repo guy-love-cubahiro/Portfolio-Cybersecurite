@@ -97,3 +97,84 @@ nmap -sV 192.168.230.220
 
 Le scan `-sV` a permis d'obtenir des informations plus précises sur les services exécutés par le serveur Windows. Contrairement au scan de ports classique, cette commande tente d'identifier les logiciels qui écoutent sur les ports ouverts en échangeant des messages avec eux. Ces informations sont essentielles pour évaluer la sécurité des services et rechercher d'éventuelles vulnérabilités connues.
 
+## Détection du système d'exploitation (-O)
+
+### Objectif
+
+Identifier le système d'exploitation probable de la machine cible à partir de son empreinte réseau (TCP/IP Fingerprinting).
+
+### Commande utilisée
+
+```bash
+sudo nmap -O 192.168.230.220
+```
+
+### Résultats obtenus
+
+- Système détecté : Microsoft Windows (estimation)
+- Niveau de confiance : 96 %
+- Device type : General purpose
+- Distance réseau : 1 hop
+
+### Analyse
+
+Le scan a identifié un système Microsoft Windows avec un niveau de confiance élevé. Toutefois, Nmap indique que les conditions du test ne sont pas idéales, car il n'a pas trouvé de port fermé. Le pare-feu de la machine limite donc la précision de la détection. Les résultats doivent être interprétés comme une forte probabilité et non comme une certitude.
+
+# Résumé des commandes étudiées
+
+| Commande | Objectif |
+|----------|----------|
+| `nmap -sn 192.168.230.0/24` | Découvrir les hôtes actifs sur le réseau |
+| `nmap 192.168.230.220` | Identifier les ports TCP ouverts |
+| `nmap -sV 192.168.230.220` | Identifier les services et tenter de déterminer leur version |
+| `sudo nmap -O 192.168.230.220` | Estimer le système d'exploitation de la machine cible |
+
+# Ce que j'ai appris
+
+Au cours de ce chapitre, j'ai appris à :
+
+- découvrir les machines actives d'un réseau local ;
+- interpréter les états des ports (open, closed, filtered) ;
+- identifier les services exécutés sur les ports ouverts ;
+- comprendre le fonctionnement de la détection des versions avec `-sV` ;
+- utiliser la détection du système d'exploitation avec `-O` ;
+- interpréter les résultats de Nmap avec un esprit critique ;
+- distinguer les observations des conclusions.
+
+# Bonnes pratiques retenues
+
+- Toujours commencer par identifier les hôtes actifs.
+- Ne jamais supposer qu'un service est vulnérable uniquement parce qu'un port est ouvert.
+- Interpréter les résultats de Nmap en tenant compte des limites de l'outil.
+- Confirmer les hypothèses à l'aide de plusieurs sources d'information.
+- Réaliser les scans uniquement dans un environnement autorisé.
+
+# Questions d'entretien technique
+
+## Pourquoi commencer par un scan `-sn` ?
+
+Parce qu'il permet d'identifier les machines actives avant de lancer des analyses plus détaillées.
+
+---
+
+## Quelle différence existe-t-il entre un port `closed` et un port `filtered` ?
+
+Un port **closed** répond mais n'accepte pas de connexion. Un port **filtered** est bloqué par un pare-feu ou un équipement réseau, empêchant Nmap de déterminer son état.
+
+---
+
+## Un port ouvert est-il une vulnérabilité ?
+
+Non. Un port ouvert indique simplement qu'un service est accessible. Il faut ensuite analyser le service, sa configuration et sa version.
+
+---
+
+## Pourquoi utiliser `-sV` ?
+
+Pour identifier les services exécutés sur les ports ouverts et tenter d'en déterminer la version.
+
+---
+
+## Pourquoi Nmap ne peut-il pas toujours identifier précisément un système d'exploitation ?
+
+Parce que plusieurs systèmes d'exploitation peuvent avoir des signatures réseau similaires et que des mécanismes comme les pare-feu peuvent limiter la précision de la détection.
