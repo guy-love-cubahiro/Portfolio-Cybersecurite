@@ -16,3 +16,67 @@ Les règles RDP sont activées et leur action est définie sur **Autoriser**, ce
 
 Cette configuration explique pourquoi Nmap détecte le port **3389/tcp** dans l'état **open**.
 
+# Comparaison des principaux scans TCP
+
+| Caractéristique | TCP Connect Scan (`-sT`) | SYN Scan (`-sS`) |
+|-----------------|--------------------------|------------------|
+| Nécessite les privilèges administrateur | Non | Oui (généralement) |
+| Établit une connexion complète | Oui | Non |
+| Termine le Three-Way Handshake | Oui | Non |
+| Plus discret | Non | Oui |
+| Plus visible dans les journaux | Oui | Non (généralement) |
+| Utilisation principale | Compatibilité maximale | Audit et tests de sécurité |
+
+# Commandes étudiées
+
+```bash
+nmap -sn 192.168.230.0/24
+nmap 192.168.230.220
+nmap -sV 192.168.230.220
+sudo nmap -O 192.168.230.220
+nmap -sT 192.168.230.220
+sudo nmap -sS 192.168.230.220
+```
+
+# Compétences acquises
+
+À la fin de ce chapitre, je suis capable de :
+
+- expliquer le fonctionnement du protocole TCP ;
+- décrire le Three-Way Handshake ;
+- distinguer un TCP Connect Scan d'un SYN Scan ;
+- interpréter les états open, closed et filtered ;
+- comprendre l'influence du pare-feu sur les résultats de Nmap ;
+- analyser les échanges TCP dans Wireshark ;
+- expliquer le rôle des ports éphémères ;
+- interpréter les résultats d'un scan dans un contexte de cybersécurité.
+
+# Questions d'entretien technique
+
+## Quelle est la différence entre un scan `-sT` et un scan `-sS` ?
+
+Le scan `-sT` établit une connexion TCP complète, tandis que le scan `-sS` interrompt la connexion avant la fin du Three-Way Handshake.
+
+---
+
+## Pourquoi un port `filtered` apparaît-il ?
+
+Parce qu'un pare-feu ou un équipement de sécurité empêche Nmap de déterminer si le port est ouvert ou fermé.
+
+---
+
+## Un port ouvert est-il une vulnérabilité ?
+
+Non. Il indique simplement qu'un service écoute sur ce port.
+
+---
+
+## Pourquoi les attaquants utilisent-ils des scans réseau ?
+
+Pour identifier les services accessibles, préparer une attaque et sélectionner leurs cibles.
+
+---
+
+## Pourquoi limiter les connexions RDP à certaines adresses IP ?
+
+Pour réduire la surface d'attaque et empêcher les connexions non autorisées.
