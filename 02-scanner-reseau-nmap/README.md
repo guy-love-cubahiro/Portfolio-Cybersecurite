@@ -30,6 +30,41 @@ L'objectif est d'apprendre à identifier les hôtes actifs, analyser les ports o
 - Résultats des analyses
 - Ressources
 
+## Compétences développées
+
+- Découverte des hôtes avec Nmap
+- Analyse des ports TCP et UDP
+- Détection des services et de leurs versions
+- Estimation du système d'exploitation
+- Utilisation des scripts NSE
+- Interprétation des états des ports (open, closed, filtered)
+- Analyse des résultats
+- Rédaction d'un rapport d'audit professionnel
+
+## Documentation disponible
+
+- Documentation complète du laboratoire
+- Rapport d'audit réseau
+- Captures d'écran
+
+## Connaissances acquises
+
+Au cours de ce projet, j'ai appris à :
+
+- choisir la méthode de scan adaptée ;
+- interpréter les résultats sans tirer de conclusions hâtives ;
+- comprendre les limites des outils de scan ;
+- appliquer une méthodologie professionnelle d'audit réseau.
+
 ## État du projet
 
-Projet en cours de réalisation.
+✅ Projet terminé
+
+Ce laboratoire fait partie de mon portfolio professionnel en cybersécurité.
+
+
+## Auteur
+
+Guy Love Cubahiro
+
+Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior.
