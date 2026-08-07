@@ -35,7 +35,7 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 |---------|:------:|
 | 01 – Analyse du trafic réseau avec Wireshark | ✅ Terminé |
 | 02 – Scanner de réseau avec Nmap | ✅ Terminé |
-| 03 – Active Directory | ⏳ À venir |
+| 03 – Active Directory | ⏳ en cours |
 | 04 – Analyse de vulnérabilités avec OpenVAS | ⏳ À venir |
 | 05 – Protection et investigation avec Microsoft Defender | ⏳ À venir |
 | 06 – Analyse des journaux avec Splunk | ⏳ À venir |
