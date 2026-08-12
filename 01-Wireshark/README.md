@@ -98,3 +98,16 @@ Ce projet démontre ma capacité à :
 - interpréter les principaux champs des protocoles Ethernet II, IPv4 et ICMP ;
 - documenter une analyse technique de manière structurée ;
 - utiliser Git et GitHub pour gérer un projet de cybersécurité.
+
+## État du projet
+
+✅ Projet terminé
+
+Ce laboratoire fait partie de mon portfolio professionnel en cybersécurité.
+
+
+## Auteur
+
+Guy Love Cubahiro
+
+Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior et/ou un poste d'analyste SOC junior.
