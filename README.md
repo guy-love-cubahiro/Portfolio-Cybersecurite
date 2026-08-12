@@ -2,7 +2,7 @@
 
 Bienvenue sur mon portfolio de cybersécurité.
 
-Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité de Polytechnique Montréal. Ce dépôt présente les laboratoires, projets et exercices que je réalise afin de développer mes compétences techniques et de me préparer à un poste d'analyste SOC junior.
+Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité de Polytechnique Montréal. Ce dépôt présente les laboratoires, projets et exercices que je réalise afin de développer mes compétences techniques et de me préparer à un poste d'analyste cybersécurité junior.
 
 ---
 
