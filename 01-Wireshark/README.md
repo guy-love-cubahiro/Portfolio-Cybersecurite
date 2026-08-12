@@ -4,7 +4,7 @@
 
 Ce projet a été réalisé dans le cadre de la création de mon portfolio en cybersécurité.
 
-L'objectif est d'apprendre à capturer, analyser et interpréter le trafic réseau à l'aide de Wireshark afin de comprendre le fonctionnement des principaux protocoles réseau et de développer les compétences attendues d'un analyste SOC junior.
+L'objectif est d'apprendre à capturer, analyser et interpréter le trafic réseau à l'aide de Wireshark afin de comprendre le fonctionnement des principaux protocoles réseau et de développer les compétences attendues d'un analyste cybersécurité junior et analyste SOC junior
 
 Les captures sont réalisées dans un laboratoire personnel composé de plusieurs machines virtuelles exécutées sous VMware Workstation Pro.
 
@@ -84,8 +84,6 @@ Les captures sont réalisées dans un laboratoire personnel composé de plusieur
 ├── captures/
 ├── captures-pcap/
 ├── rapports/
-├── notes/
-├── commandes/
 └── README.md
 ```
 
