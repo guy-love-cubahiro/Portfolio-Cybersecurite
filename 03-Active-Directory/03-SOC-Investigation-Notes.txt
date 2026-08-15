@@ -1,0 +1,134 @@
+INVESTIGATION SOC - ACTIVE DIRECTORY
+
+Projet : 03 - Active Directory
+Domaine : CYBERLAB / cyberlab.local
+Contrôleur de domaine : WIN-C11UVCJVMOD.cyberlab.local
+
+SCÉNARIO
+
+Simulation contrôlée de plusieurs tentatives d'authentification
+incorrectes contre un compte utilisateur Active Directory.
+
+L'objectif est d'identifier le compte concerné, la machine source,
+l'adresse IP source, le verrouillage du compte et les événements
+de sécurité associés.
+
+COMPTE CONCERNÉ
+
+Compte : ngagnon
+Domaine : CYBERLAB
+Compte complet : CYBERLAB\ngagnon
+
+SOURCE DE L'ACTIVITÉ
+
+Machine source : GUYLOVE_WINDOWS
+Adresse IPv4 : 192.168.230.218
+
+ÉVÉNEMENT 4740 - VERROUILLAGE DU COMPTE (120-SOC-Event-4740.png)
+
+Event ID : 4740
+Heure : 2026-08-15 11:58:06
+Compte verrouillé : ngagnon
+Domaine : CYBERLAB
+Ordinateur appelant : GUYLOVE_WINDOWS
+
+Interprétation :
+Active Directory a verrouillé le compte ngagnon après que le seuil
+de tentatives d'authentification incorrectes configuré dans la
+politique du domaine a été atteint.
+
+ÉVÉNEMENT 4771 - ÉCHEC DE PRÉ-AUTHENTIFICATION KERBEROS(121-SOC-Kerberos-4771.png)
+
+Event ID : 4771
+Heure : 2026-08-15 11:58:11
+Compte : ngagnon
+Service : krbtgt/CYBERLAB
+Adresse source : 192.168.230.218
+Port source : 51843
+Code d'échec : 0x12
+
+Interprétation :
+Une tentative Kerberos a été observée après le verrouillage du compte.
+Le code 0x12 indique que les informations d'identification du client
+ont été révoquées, ce qui est cohérent avec l'état verrouillé du compte
+dans ce scénario.
+
+ÉVÉNEMENT 4625
+
+Aucun événement 4625 pertinent correspondant au scénario actuel
+n'a été identifié.
+
+Un ancien événement 4625 a été observé avec le statut 0xC0000133,
+mais il était associé à un ancien problème de synchronisation
+temporelle du laboratoire et n'a donc pas été utilisé comme preuve
+pour cette investigation.
+
+CHRONOLOGIE DE L'INCIDENT
+
+1. Des tentatives d'authentification incorrectes sont générées
+   volontairement depuis GUYLOVE_WINDOWS contre CYBERLAB\ngagnon.
+
+2. Les tentatives incorrectes font progresser le compteur d'échecs
+   d'authentification du compte.
+
+3. Le seuil de verrouillage configuré dans CYBERLAB est atteint.
+
+4. À 11:58:06, Active Directory génère l'Event ID 4740 :
+   le compte ngagnon est verrouillé.
+   GUYLOVE_WINDOWS est identifié comme ordinateur appelant.
+
+5. À 11:58:11, l'Event ID 4771 indique un échec de
+   pré-authentification Kerberos concernant ngagnon.
+
+6. L'événement 4771 fournit l'adresse source 192.168.230.218,
+   correspondant au poste GUYLOVE_WINDOWS.
+
+7. La corrélation des événements 4740 et 4771 permet d'associer
+   le compte ciblé, la machine source et l'adresse IP source.
+
+ANALYSE SOC
+
+Compte concerné :
+CYBERLAB\ngagnon
+
+Machine source :
+GUYLOVE_WINDOWS
+
+Adresse IP source :
+192.168.230.218
+
+Contrôleur de domaine :
+WIN-C11UVCJVMOD.cyberlab.local
+
+Événements principaux :
+4740 - Verrouillage du compte
+4771 - Échec de pré-authentification Kerberos
+
+Niveau de confiance :
+Élevé
+
+Justification :
+Les événements Windows permettent de corréler le compte ngagnon
+avec GUYLOVE_WINDOWS et l'adresse IP 192.168.230.218.
+
+Dans un environnement réel, une série similaire d'échecs
+d'authentification nécessiterait de déterminer s'il s'agit d'une
+erreur utilisateur, d'identifiants enregistrés incorrectement dans
+un service ou d'une activité malveillante.
+
+CONCLUSION
+
+L'investigation a permis d'identifier une série contrôlée d'échecs
+d'authentification visant le compte CYBERLAB\ngagnon.
+
+Le compte a été verrouillé conformément à la politique de sécurité
+du domaine.
+
+La corrélation des événements 4740 et 4771 a permis d'identifier
+GUYLOVE_WINDOWS comme machine source et 192.168.230.218 comme
+adresse IP associée.
+
+Ce scénario démontre l'utilisation des journaux de sécurité Windows
+et des événements Active Directory pour reconstruire une chronologie
+d'authentification et identifier l'origine d'un verrouillage de compte.
+
