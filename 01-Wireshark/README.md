@@ -4,7 +4,7 @@
 
 Ce projet a été réalisé dans le cadre de la création de mon portfolio en cybersécurité.
 
-L'objectif est d'apprendre à capturer, analyser et interpréter le trafic réseau à l'aide de Wireshark afin de comprendre le fonctionnement des principaux protocoles réseau et de développer les compétences attendues d'un analyste SOC junior.
+L'objectif est d'apprendre à capturer, analyser et interpréter le trafic réseau à l'aide de Wireshark afin de comprendre le fonctionnement des principaux protocoles réseau et de développer les compétences attendues d'un analyste cybersécurité junior et analyste SOC junior
 
 Les captures sont réalisées dans un laboratoire personnel composé de plusieurs machines virtuelles exécutées sous VMware Workstation Pro.
 
@@ -84,8 +84,6 @@ Les captures sont réalisées dans un laboratoire personnel composé de plusieur
 ├── captures/
 ├── captures-pcap/
 ├── rapports/
-├── notes/
-├── commandes/
 └── README.md
 ```
 
@@ -100,3 +98,16 @@ Ce projet démontre ma capacité à :
 - interpréter les principaux champs des protocoles Ethernet II, IPv4 et ICMP ;
 - documenter une analyse technique de manière structurée ;
 - utiliser Git et GitHub pour gérer un projet de cybersécurité.
+
+## État du projet
+
+✅ Projet terminé
+
+Ce laboratoire fait partie de mon portfolio professionnel en cybersécurité.
+
+
+## Auteur
+
+Guy Love Cubahiro
+
+Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior et/ou un poste d'analyste SOC junior.

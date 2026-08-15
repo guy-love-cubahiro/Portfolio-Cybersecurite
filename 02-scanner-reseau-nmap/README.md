@@ -67,4 +67,4 @@ Ce laboratoire fait partie de mon portfolio professionnel en cybersécurité.
 
 Guy Love Cubahiro
 
-Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior.
+Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior et/ou un poste d'analyste SOC junior.

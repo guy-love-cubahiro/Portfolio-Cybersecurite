@@ -2,7 +2,7 @@
 
 Bienvenue sur mon portfolio de cybersécurité.
 
-Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité de Polytechnique Montréal. Ce dépôt présente les laboratoires, projets et exercices que je réalise afin de développer mes compétences techniques et de me préparer à un poste d'analyste SOC junior.
+Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité de Polytechnique Montréal. Ce dépôt présente les laboratoires, projets et exercices que je réalise afin de développer mes compétences techniques et de me préparer à un poste d'analyste cybersécurité junior.
 
 ---
 
@@ -34,8 +34,8 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 | Projet | Statut |
 |---------|:------:|
 | 01 – Analyse du trafic réseau avec Wireshark | ✅ Terminé |
-| 02 – Scanner de réseau avec Nmap | ⏳ À venir |
-| 03 – Active Directory | ⏳ À venir |
+| 02 – Scanner de réseau avec Nmap | ✅ Terminé |
+| 03 – Active Directory | ⏳ en cours |
 | 04 – Analyse de vulnérabilités avec OpenVAS | ⏳ À venir |
 | 05 – Protection et investigation avec Microsoft Defender | ⏳ À venir |
 | 06 – Analyse des journaux avec Splunk | ⏳ À venir |
