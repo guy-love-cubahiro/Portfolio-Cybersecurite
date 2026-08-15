@@ -51,32 +51,5 @@ sudo nmap -sS 192.168.230.220
 - expliquer le rôle des ports éphémères ;
 - interpréter les résultats d'un scan dans un contexte de cybersécurité.
 
-# Questions d'entretien technique
-
-## Quelle est la différence entre un scan `-sT` et un scan `-sS` ?
-
-Le scan `-sT` établit une connexion TCP complète, tandis que le scan `-sS` interrompt la connexion avant la fin du Three-Way Handshake.
-
----
-
-## Pourquoi un port `filtered` apparaît-il ?
-
-Parce qu'un pare-feu ou un équipement de sécurité empêche Nmap de déterminer si le port est ouvert ou fermé.
-
----
-
-## Un port ouvert est-il une vulnérabilité ?
-
-Non. Il indique simplement qu'un service écoute sur ce port.
-
----
-
-## Pourquoi les attaquants utilisent-ils des scans réseau ?
-
-Pour identifier les services accessibles, préparer une attaque et sélectionner leurs cibles.
-
----
-
-## Pourquoi limiter les connexions RDP à certaines adresses IP ?
 
 Pour réduire la surface d'attaque et empêcher les connexions non autorisées.
