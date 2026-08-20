@@ -42,7 +42,6 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 | 07 – Détection avec Wazuh | ⏳ À venir |
 | 08 – Projet d'intégration SOC | ⏳ À venir |
 | 09 – Détection d'incidents avec Microsoft Sysmon et Event Viewer | ⏳ À venir |
-| 10 – Préparation aux entretiens techniques | ⏳ À venir |
 
 ---
 
