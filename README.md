@@ -57,6 +57,7 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 - Documentation technique
 - Git et GitHub
 - Méthodologie d'investigation
+- Utilisation de l'IA
 
 ---
 
