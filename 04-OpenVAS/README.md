@@ -207,3 +207,5 @@ ont été documentés et associés à des mesures de mitigation.
 Toutes les analyses et manipulations présentées dans ce projet ont été
 réalisées dans un **environnement de laboratoire personnel et autorisé**
 à des fins d'apprentissage et de démonstration professionnelle.
+
+---
