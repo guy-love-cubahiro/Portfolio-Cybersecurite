@@ -209,3 +209,12 @@ réalisées dans un **environnement de laboratoire personnel et autorisé**
 à des fins d'apprentissage et de démonstration professionnelle.
 
 ---
+État du projet
+✅ Projet terminé
+
+Ce laboratoire fait partie de mon portefeuille professionnel en cybersécurité.
+
+Auteur
+Guy Love Cubahiro
+
+Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior et/ou un poste d'analyste SOC junior.
