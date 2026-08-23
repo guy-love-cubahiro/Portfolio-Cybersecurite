@@ -75,5 +75,9 @@ Chaque projet comprend :
 L'objectif est de démontrer ma capacité à apprendre, documenter et appliquer les concepts de cybersécurité dans un contexte pratique.
 
 ---
+Note : Des outils d'intelligence artificielle ont été utilisés comme outil d'assistance et d'apprentissage, et non comme substitut à la réalisation pratique des
+projets ou à la compréhension des concepts présentés.
+
+---
 
 Merci de votre visite !
