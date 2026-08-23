@@ -35,14 +35,15 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 |---------|:------:|
 | 01 – Analyse du trafic réseau avec Wireshark | ✅ Terminé |
 | 02 – Scanner de réseau avec Nmap | ✅ Terminé |
-| 03 – Active Directory | ⏳ en cours |
-| 04 – Analyse de vulnérabilités avec OpenVAS | ⏳ À venir |
-| 05 – Protection et investigation avec Microsoft Defender | ⏳ À venir |
+| 03 – Active Directory | ✅ Terminé |
+| 04 – Analyse de vulnérabilités avec OpenVAS |✅ Terminé |
+| 05 – Protection et investigation avec Microsoft Defender | En cours |
 | 06 – Analyse des journaux avec Splunk | ⏳ À venir |
 | 07 – Détection avec Wazuh | ⏳ À venir |
 | 08 – Projet d'intégration SOC | ⏳ À venir |
 | 09 – Détection d'incidents avec Microsoft Sysmon et Event Viewer | ⏳ À venir |
-| 10 – Préparation aux entretiens techniques | ⏳ À venir |
+| 10 – Triage, analyse et investigation d'incidents avec l'Intelligence Artificielle | ⏳ À venir |
+
 
 ---
 
@@ -56,6 +57,7 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 - Documentation technique
 - Git et GitHub
 - Méthodologie d'investigation
+- Utilisation de l'IA
 
 ---
 
@@ -71,6 +73,10 @@ Chaque projet comprend :
 - les compétences acquises.
 
 L'objectif est de démontrer ma capacité à apprendre, documenter et appliquer les concepts de cybersécurité dans un contexte pratique.
+
+---
+Note : Des outils d'intelligence artificielle ont été utilisés comme outil d'assistance et d'apprentissage, et non comme substitut à la réalisation pratique des
+projets ou à la compréhension des concepts présentés.
 
 ---
 
