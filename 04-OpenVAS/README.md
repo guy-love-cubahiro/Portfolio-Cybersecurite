@@ -177,7 +177,7 @@ sévérité.
 
 Le rapport technique détaillé du projet est disponible ici :
 
-[`04-rapport-openvas.md`](./04-rapport-openvas.md)
+[`rapport/04-rapport-openvas.md`](./04-rapport-openvas.md)
 
 Les preuves techniques et captures d'écran sont disponibles dans :
 
