@@ -78,6 +78,15 @@ Le dossier `rapport` contient :
 
 Le dossier `Images` contient les preuves techniques et les captures d'écran réalisées pendant le laboratoire.
 
+---
+
+État du projet ✅ Projet terminé
+
+Ce laboratoire fait partie de mon portefeuille professionnel en cybersécurité.
+
+Auteur Guy Love Cubahiro
+
+Portfolio réalisé dans le cadre de ma préparation à un poste d'analyste cybersécurité junior et/ou un poste d'analyste SOC junior.
 ## Sécurité
 
 Aucun malware réel n'a été utilisé.
