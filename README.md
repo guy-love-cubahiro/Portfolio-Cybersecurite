@@ -37,8 +37,8 @@ Je suis diplômé d'un baccalauréat ès sciences par cumul en cybersécurité d
 | 02 – Scanner de réseau avec Nmap | ✅ Terminé |
 | 03 – Active Directory | ✅ Terminé |
 | 04 – Analyse de vulnérabilités avec OpenVAS |✅ Terminé |
-| 05 – Protection et investigation avec Microsoft Defender | En cours |
-| 06 – Analyse des journaux avec Splunk | ⏳ À venir |
+| 05 – Protection et investigation avec Microsoft Defender | ✅ Terminé |
+| 06 – Analyse des journaux avec Splunk | En cours |
 | 07 – Détection avec Wazuh | ⏳ À venir |
 | 08 – Projet d'intégration SOC | ⏳ À venir |
 | 09 – Détection d'incidents avec Microsoft Sysmon et Event Viewer | ⏳ À venir |
